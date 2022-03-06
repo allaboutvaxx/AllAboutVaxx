@@ -2758,7 +2758,7 @@ infectious?</string>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="What are the new or ongoing symptoms of COVID-19?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPm-mG-MCQ">
                                                 <rect key="frame" x="39" y="1814" width="350" height="80"/>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
