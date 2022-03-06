@@ -2423,7 +2423,7 @@ Frequently Asked Questions</string>
                                                     <constraint firstAttribute="height" constant="310" id="MS7-kw-mcb"/>
                                                     <constraint firstAttribute="width" constant="340" id="VAk-z4-Qkj"/>
                                                 </constraints>
-                                                <mutableString key="text">COVID-19 is a disease caused by SARS-CoV-2 virus. Most people with COVID-19 have mild symptoms, but in some cases people get severely ill. Even though most people get better within weeks of getting the virus, some people experience post-COVID conditions. These conditions ranges from new, returning, or ongoing health problems. People can experience more than four weeks after first being infected with the virus. People who have certain underlying medical conditions are more likely to get severely ill from COVID-19. The available vaccines against COVID-19 are safe and effective.</mutableString>
+                                                <string key="text">COVID-19 is a disease caused by SARS-CoV-2 virus. Most people with COVID-19 have mild symptoms, but in some cases people get severely ill. Even though most people get better within weeks of getting the virus, some people experience post-COVID conditions. These conditions ranges from new, returning, or ongoing health problems. People can experience more than four weeks after first being infected with the virus. People who have certain underlying medical conditions are more likely to get severely ill from COVID-19. The available vaccines against COVID-19 are safe and effective.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -2661,10 +2661,16 @@ infectious?</string>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIy-td-UNR">
                                         <rect key="frame" x="0.0" y="-68" width="428" height="3070"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="What is COVID-19?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOO-cc-4Ci">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOO-cc-4Ci">
                                                 <rect key="frame" x="44" y="144" width="340" height="30"/>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="24"/>
-                                                <nil key="textColor"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="What is COVID-19?">
+                                                        <attributes>
+                                                            <font key="NSFont" size="24" name="Helvetica-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNL-KR-Y5N">
