@@ -2710,7 +2710,7 @@ infectious?</string>
                                                 </constraints>
                                                 <string key="text">How long does someone stays 
 infectious?</string>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
