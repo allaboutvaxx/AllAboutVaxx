@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AllAboutVaxxTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEW-wc-tbH">
-                                <rect key="frame" x="54" y="591" width="320" height="125"/>
+                                <rect key="frame" x="54" y="503" width="320" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="Pur-YJ-w6I"/>
                                 </constraints>
@@ -28,7 +28,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ue-3F-LM1">
-                                <rect key="frame" x="52" y="159" width="324" height="120"/>
+                                <rect key="frame" x="52" y="71" width="324" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="Wl3-cD-5TA"/>
                                 </constraints>
@@ -37,7 +37,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ux3-un-w8s">
-                                <rect key="frame" x="232" y="291" width="144" height="134"/>
+                                <rect key="frame" x="232" y="203" width="144" height="134"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="News" title=""/>
                                 <connections>
@@ -51,12 +51,15 @@
                                 <buttonConfiguration key="configuration" style="plain"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8G-ox-4dO">
-                                <rect key="frame" x="55" y="437" width="318" height="142"/>
+                                <rect key="frame" x="55" y="349" width="318" height="142"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="Record" title=""/>
+                                <connections>
+                                    <segue destination="HMA-M6-Rx2" kind="show" id="dZP-E4-HoB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fm-IO-Ykl">
-                                <rect key="frame" x="52" y="291" width="144" height="134"/>
+                                <rect key="frame" x="52" y="203" width="144" height="134"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="Check" title=""/>
                                 <connections>
@@ -72,13 +75,13 @@
                                 <color key="shadowColor" systemColor="labelColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All About Vaxx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEE-oi-1xA">
-                                <rect key="frame" x="74.666666666666657" y="88" width="278.66666666666674" height="46"/>
+                                <rect key="frame" x="74.666666666666657" y="0.0" width="278.66666666666674" height="46"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tr-we-ovn">
-                                <rect key="frame" x="52" y="728" width="144" height="134"/>
+                                <rect key="frame" x="52" y="640" width="144" height="134"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="FAQ" title=""/>
                                 <connections>
@@ -86,7 +89,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKk-8w-KS4">
-                                <rect key="frame" x="232" y="728" width="144" height="134"/>
+                                <rect key="frame" x="232" y="640" width="144" height="134"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="AboutUs" title="">
                                     <color key="baseBackgroundColor" systemColor="linkColor"/>
@@ -124,16 +127,157 @@
             </objects>
             <point key="canvasLocation" x="179.43925233644859" y="-802.80777537796985"/>
         </scene>
+        <!--Log In View Controller-->
+        <scene sceneID="zo6-Mk-liT">
+            <objects>
+                <viewController storyboardIdentifier="logIn" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HMA-M6-Rx2" customClass="LogInViewController" customModule="AllAboutVaxxTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zj1-nX-Pau">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaP-wg-kru">
+                                <rect key="frame" x="197" y="84" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xn7-Dt-P0I">
+                                <rect key="frame" x="70" y="141" width="289" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wEE-MA-BWS">
+                                <rect key="frame" x="70" y="211" width="289" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYn-K1-5H3">
+                                <rect key="frame" x="188" y="306" width="60" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                                <connections>
+                                    <action selector="loginTapped:" destination="HMA-M6-Rx2" eventType="touchUpInside" id="12G-fr-2hx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyV-ZG-lYW">
+                                <rect key="frame" x="57" y="384" width="322" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Don't have an account yet? Create an account"/>
+                                <connections>
+                                    <action selector="createAccountTapped:" destination="HMA-M6-Rx2" eventType="touchUpInside" id="EHb-ul-Dek"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nZs-up-bia"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9ty-sr-wcQ"/>
+                    <connections>
+                        <outlet property="email" destination="xn7-Dt-P0I" id="SL9-jf-jGg"/>
+                        <outlet property="password" destination="wEE-MA-BWS" id="vJS-ze-MqS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mdT-pM-bxA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="175.23364485981307" y="-111.44708423326135"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="5Cv-kp-YMX">
+            <objects>
+                <viewController storyboardIdentifier="signUp" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yJR-oB-NUb" customClass="SignUpViewController" customModule="AllAboutVaxxTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yVX-mK-B4Z">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cU8-kz-3ce">
+                                <rect key="frame" x="184" y="78" width="60" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rhs-cG-kqc">
+                                <rect key="frame" x="75" y="141" width="278" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bfY-vb-OtP">
+                                <rect key="frame" x="75" y="233" width="278" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKG-Jy-TYq">
+                                <rect key="frame" x="98" y="380" width="233" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Already have an account? Log in"/>
+                                <connections>
+                                    <action selector="alreadyHaveAnAccountTapped:" destination="yJR-oB-NUb" eventType="touchUpInside" id="xeF-VH-MUi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoL-gW-nPG">
+                                <rect key="frame" x="177" y="301" width="75" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Sign Up"/>
+                                <connections>
+                                    <action selector="signUpTapped:" destination="yJR-oB-NUb" eventType="touchUpInside" id="pg3-08-8Xy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IzJ-T8-dN5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="Rhs-cG-kqc" id="hnX-TZ-1L6"/>
+                        <outlet property="password" destination="bfY-vb-OtP" id="d9c-xQ-1x0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="emS-uQ-4UG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="-111.44708423326135"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oqO-by-Qkr">
+            <objects>
+                <viewController storyboardIdentifier="loginHome" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HeB-rX-cpa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oOk-gp-UEX">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4c-Yo-FSO">
+                                <rect key="frame" x="186" y="77" width="56" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="o4u-YF-OWe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ymk-dV-NWm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1629" y="-106"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="waY-DV-7tJ">
             <objects>
                 <viewController id="RNe-Cp-XFV" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qT0-fD-K55">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="8000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="7946"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fwl-G1-gbd">
-                                <rect key="frame" x="0.0" y="88" width="428" height="7912"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="7946"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fn-Wy-uLG">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="7946"/>
@@ -594,11 +738,11 @@ CDC recommends that people who are starting their vaccine series or getting a bo
             <objects>
                 <viewController id="ajz-9z-F2q" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="scQ-zM-hIc">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="5000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="4946"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h37-p9-gef">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="5000"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="4946"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jp7-4M-OVJ">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="5000"/>
@@ -755,18 +899,18 @@ CDC recommends that people who are starting their vaccine series or getting a bo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5w-gY-g3E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6623.8317757009345" y="-1485.0971922246222"/>
+            <point key="canvasLocation" x="6513" y="-2458"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gXp-EU-Q4C">
             <objects>
                 <viewController id="XiP-4E-oW5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EHo-0I-woX">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="4892"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="4838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="di5-q1-AdN">
-                                <rect key="frame" x="0.0" y="88" width="428" height="4804"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="4838"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wj2-vt-6rh">
                                         <rect key="frame" x="0.0" y="0.0" width="420" height="5000"/>
@@ -922,18 +1066,18 @@ CDC recommends that people who are starting their vaccine series or getting a bo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lZI-8q-vl8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7399.065420560747" y="-1519.4384449244062"/>
+            <point key="canvasLocation" x="7307" y="-2493"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HWW-xi-OUR">
             <objects>
                 <viewController id="Ypd-SW-aau" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aqg-Xt-x21">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="5000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="4946"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vPW-1r-wMQ">
-                                <rect key="frame" x="0.0" y="88" width="428" height="4912"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="4946"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cks-fm-QIt">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="5000"/>
@@ -1089,18 +1233,18 @@ CDC recommends that people who are starting their vaccine series or getting a bo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MZK-vf-HvL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8234.5794392523367" y="-1484.4492440604752"/>
+            <point key="canvasLocation" x="8029" y="-2458"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="w68-yT-n9d">
             <objects>
                 <viewController id="1qk-5t-QO6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Atl-2f-gmR">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="5000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="4946"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6b3-A3-ffx">
-                                <rect key="frame" x="0.0" y="88" width="428" height="4912"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="4946"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORf-7r-0Hi">
                                         <rect key="frame" x="0.0" y="0.0" width="445" height="5000"/>
@@ -1260,18 +1404,18 @@ CDC recommends that people who are starting their vaccine series or getting a bo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zgB-AK-QNa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9019.6261682242985" y="-1485.0971922246222"/>
+            <point key="canvasLocation" x="8828" y="-2456"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pul-aa-gZz">
             <objects>
                 <viewController id="ral-Sd-jej" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CBo-oR-RSg">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="5000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="4946"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ivC-1Y-3eQ">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="5000"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="4946"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZ8-yZ-1k7">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="5000"/>
@@ -1659,18 +1803,18 @@ Nasal: congestion or sneezing
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZ9-e7-435" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5843" y="-1484"/>
+            <point key="canvasLocation" x="5766" y="-2458"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="WgW-KQ-fOe">
             <objects>
                 <viewController id="ahr-SZ-TIm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rv2-jQ-GPD">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BtO-q6-sZT">
-                                <rect key="frame" x="37" y="120" width="354" height="46"/>
+                                <rect key="frame" x="37" y="32" width="354" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="354" id="72J-FU-Ib9"/>
                                     <constraint firstAttribute="height" constant="46" id="NSb-ZP-oR1"/>
@@ -1686,7 +1830,7 @@ Nasal: congestion or sneezing
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBm-vO-7zj">
-                                <rect key="frame" x="37" y="200" width="355" height="60"/>
+                                <rect key="frame" x="37" y="112" width="355" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="355" id="aRl-Jx-XI6"/>
                                     <constraint firstAttribute="height" constant="60" id="i2k-nc-iHb"/>
@@ -1706,7 +1850,7 @@ Nasal: congestion or sneezing
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsp-MT-xgL">
-                                <rect key="frame" x="37" y="389" width="355" height="60"/>
+                                <rect key="frame" x="37" y="301" width="355" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Tax-WJ-MmF"/>
                                     <constraint firstAttribute="width" constant="355" id="YdR-YF-2Gj"/>
@@ -1718,7 +1862,7 @@ Nasal: congestion or sneezing
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TuX-56-2x7">
-                                <rect key="frame" x="37" y="493" width="355" height="60"/>
+                                <rect key="frame" x="37" y="405" width="355" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="355" id="gBm-9n-vCj"/>
                                     <constraint firstAttribute="height" constant="60" id="v6u-1h-ndM"/>
@@ -1730,7 +1874,7 @@ Nasal: congestion or sneezing
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDD-0G-2hj">
-                                <rect key="frame" x="37" y="595" width="355" height="60"/>
+                                <rect key="frame" x="37" y="507" width="355" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="hIn-vr-RhS"/>
                                     <constraint firstAttribute="width" constant="355" id="iK1-RR-DTK"/>
@@ -1742,7 +1886,7 @@ Nasal: congestion or sneezing
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8D4-rl-fOr">
-                                <rect key="frame" x="37" y="695" width="355" height="55"/>
+                                <rect key="frame" x="37" y="607" width="355" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="355" id="7nJ-uQ-drK"/>
                                     <constraint firstAttribute="height" constant="55" id="fSv-Jt-nfb"/>
@@ -1754,7 +1898,7 @@ Nasal: congestion or sneezing
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvT-Oo-gqv">
-                                <rect key="frame" x="37" y="296" width="355" height="60"/>
+                                <rect key="frame" x="37" y="208" width="355" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="rjb-2n-GtK"/>
                                     <constraint firstAttribute="width" constant="355" id="zPP-DC-Wbh"/>
@@ -1796,7 +1940,7 @@ Nasal: congestion or sneezing
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ru-jQ-Wef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1146.7289719626167" y="-802.80777537796985"/>
+            <point key="canvasLocation" x="4172" y="-3776"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZiR-Sp-ro8">
@@ -1821,7 +1965,7 @@ Nasal: congestion or sneezing
             <objects>
                 <viewController id="aRl-8k-4nI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f3A-0K-1HS">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is the date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jV-ex-iiM">
@@ -1839,14 +1983,14 @@ Nasal: congestion or sneezing
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bBg-4o-fvd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2045" y="-802"/>
+            <point key="canvasLocation" x="1479" y="-803"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FfB-FK-mnk">
             <objects>
                 <viewController id="LUs-Tm-YtJ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TqF-ch-kDc">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is the news place" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uB0-Qw-Nuk">
@@ -1864,18 +2008,18 @@ Nasal: congestion or sneezing
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IEn-Ui-KVV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3954" y="-802"/>
+            <point key="canvasLocation" x="2265" y="-803"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ZVf-0Q-gpc">
             <objects>
                 <viewController id="E1G-Sq-nuK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aq1-Ma-NtM">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="4000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="4694"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fdq-2J-MwG">
-                                <rect key="frame" x="0.0" y="88" width="428" height="3912"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="4694"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8YI-9L-Egl">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="4000"/>
@@ -2177,11 +2321,11 @@ Some have speculated that thimerosal (a mercury-containing chemical) in vaccines
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9z2-Q6-nJg"/>
-                    <size key="freeformSize" width="428" height="4000"/>
+                    <size key="freeformSize" width="428" height="4748"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wtm-9i-gfM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2971.9626168224299" y="-107.55939524838014"/>
+            <point key="canvasLocation" x="3384" y="-2539"/>
         </scene>
         <!--Health ScreeningVC-->
         <scene sceneID="ykc-hH-eSp">
@@ -2230,7 +2374,7 @@ Some have speculated that thimerosal (a mercury-containing chemical) in vaccines
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uf7-g4-7OG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-318.22429906542055" y="-89.416846652267822"/>
+            <point key="canvasLocation" x="179" y="-3778"/>
         </scene>
         <!--Result Screen View Controller-->
         <scene sceneID="gh2-NC-hhB">
@@ -2325,18 +2469,18 @@ Some have speculated that thimerosal (a mercury-containing chemical) in vaccines
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pbb-Oi-nba" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="438.78504672897196" y="-1.2958963282937366"/>
+            <point key="canvasLocation" x="957" y="-3690"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vi2-C2-Nnd">
             <objects>
                 <viewController id="Ib3-ht-W6A" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hVN-oy-VPM">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iev-My-Wnv">
-                                <rect key="frame" x="146" y="388" width="136" height="31"/>
+                                <rect key="frame" x="146" y="300" width="136" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="COVID - 19 FAQS"/>
                                 <connections>
@@ -2344,7 +2488,7 @@ Some have speculated that thimerosal (a mercury-containing chemical) in vaccines
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljv-93-aZJ">
-                                <rect key="frame" x="125.66666666666669" y="449" width="177" height="31"/>
+                                <rect key="frame" x="125.66666666666669" y="361" width="177" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Common Vaccine FAQS"/>
                                 <connections>
@@ -2365,18 +2509,18 @@ Some have speculated that thimerosal (a mercury-containing chemical) in vaccines
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AvA-lf-FdN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1122" y="-67"/>
+            <point key="canvasLocation" x="1838" y="-3778"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="aNv-fg-Htp">
             <objects>
                 <viewController id="KTL-cX-Yca" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8hS-Of-8b5">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="3000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="2946"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Wb-YU-ddD">
-                                <rect key="frame" x="0.0" y="88" width="428" height="2912"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="2946"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IPb-IK-SSg">
                                         <rect key="frame" x="0.0" y="0.0" width="438" height="3000"/>
@@ -2635,227 +2779,7 @@ infectious?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6YI-f1-m3h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1120.0934579439252" y="609.71922246220311"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Mss-7i-ONy">
-            <objects>
-                <viewController id="fp6-f5-a1P" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3P9-Ut-TI2">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="47X-eR-TzQ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Mh0-9R-bGN"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EwM-sV-z6S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1947" y="-44"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Wun-im-9Ee">
-            <objects>
-                <viewController id="gDp-xv-IST" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bbN-F6-qSt">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="3000"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Hn-zJ-TIo">
-                                <rect key="frame" x="0.0" y="44" width="428" height="2956"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIy-td-UNR">
-                                        <rect key="frame" x="0.0" y="-68" width="428" height="3070"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOO-cc-4Ci">
-                                                <rect key="frame" x="44" y="144" width="340" height="30"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="What is COVID-19?">
-                                                        <attributes>
-                                                            <font key="NSFont" size="24" name="Helvetica-Bold"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNL-KR-Y5N">
-                                                <rect key="frame" x="44" y="203.99999999999997" width="340" height="304.33333333333326"/>
-                                                <string key="text">COVID-19 is a disease caused by SARS-CoV-2 virus. Most people with COVID-19 have mild symptoms, but in some cases people get severely ill. Even though most people get better within weeks of getting the virus, some people experience post-COVID conditions. These conditions ranges from new, returning, or ongoing health problems. People can experience more than four weeks after first being infected with the virus. People who have certain underlying medical conditions are more likely to get severely ill from COVID-19. The available vaccines against COVID-19 are safe and effective.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="How to prevent COVID-19?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUC-Xf-rUk">
-                                                <rect key="frame" x="44" y="538.33333333333337" width="340" height="30"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ve6-Fj-dSt">
-                                                <rect key="frame" x="44" y="598.33333333333337" width="1414.6666666666667" height="101.66666666666663"/>
-                                                <string key="text">The best way to prevent illness is to avoid being exposed to the virus. It is recomended by the CDC to take preventive actions everyday to help prevent the spread of covid. These include: 
-1.Washing hands
-2.Covering mouth and nose
-3.Getting COVID-19 vaccine 
-4.Following other CDC guidelines</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMO-OG-qY1">
-                                                <rect key="frame" x="44" y="730" width="340" height="60"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="ZGh-4S-3fE"/>
-                                                </constraints>
-                                                <string key="text">How long does someone stays 
-infectious?</string>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRY-QF-4hl">
-                                                <rect key="frame" x="44" y="820" width="340" height="100"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="340" id="1F9-39-VbA"/>
-                                                    <constraint firstAttribute="height" constant="100" id="5qP-Xe-Omt"/>
-                                                </constraints>
-                                                <string key="text">Infectious rate peaks around the day before symptom shows and declines within about a week. The average period of infectiousness and risk of transmission is between 2-3 days before and 8 days after symptom.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="People who have mild to moderate symptoms typically recover in a few days or weeks." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMO-Ly-cp2">
-                                                <rect key="frame" x="39" y="1065" width="350" height="90"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="How long can does the Covid-19 symptoms last?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfB-7e-bLB">
-                                                <rect key="frame" x="39" y="1154" width="350" height="80"/>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8o-NS-4jG">
-                                                <rect key="frame" x="39" y="1254" width="350" height="150"/>
-                                                <string key="text">Long COVID is a range of symptoms that can last weeks or months after first being infected with the virus that causes COVID-19 or can appear weeks after infection. Long COVID can happen to anyone who has had COVID-19, even if their illness was mild, or if they had no symptoms.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rc-Lm-6OC">
-                                                <rect key="frame" x="39" y="1424" width="350" height="80"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="Is it possible to recover from COVID-19 at home?">
-                                                        <attributes>
-                                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNW-hc-9RE">
-                                                <rect key="frame" x="39" y="1524" width="350" height="270"/>
-                                                <string key="text">Most people with COVID-19 have mild illness and recovery at home is possible without any medical care. 
-1. Other than medical help, don't leave home.
-2. Stay away from visiting public areas. 
-3. Get proper rest and stay hydrated at all times. 
-4. To feel better, you can take over-the-counter medicines, such as acetaminophen.
-5. Stay in touch with your doctor and call before you get medical care.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="What are the new or ongoing symptoms of COVID-19?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPm-mG-MCQ">
-                                                <rect key="frame" x="39" y="1814" width="350" height="80"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R47-qP-b3B">
-                                                <rect key="frame" x="39" y="1914" width="350" height="200"/>
-                                                <string key="text">People commonly report experiencing different combinations of the following symptoms: Difficulty breathing or shortness of breath. Tiredness or fatigue. Symptoms that get worse after physical or mental activities (also known as post-exertional malaise).</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIe-B8-TMy">
-                                                <rect key="frame" x="44" y="27" width="340" height="60"/>
-                                                <string key="text">COVID-19 
-Frequently Asked Questions</string>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="-Pritom Faisal" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bga-MV-JWQ">
-                                                <rect key="frame" x="44" y="94" width="340" height="20"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="How long is the recovery period of COVID-19?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsm-cM-oTJ">
-                                                <rect key="frame" x="34" y="957" width="350" height="80"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstItem="XMO-OG-qY1" firstAttribute="trailing" secondItem="NOO-cc-4Ci" secondAttribute="trailing" id="0ir-BP-wcK"/>
-                                            <constraint firstItem="XMO-OG-qY1" firstAttribute="top" secondItem="LIy-td-UNR" secondAttribute="top" constant="730" id="4F9-v8-sWa"/>
-                                            <constraint firstItem="XMO-OG-qY1" firstAttribute="leading" secondItem="ve6-Fj-dSt" secondAttribute="leading" id="5jK-3u-rlO"/>
-                                            <constraint firstItem="XMO-OG-qY1" firstAttribute="centerX" secondItem="GPm-mG-MCQ" secondAttribute="centerX" id="5jo-E4-WcD"/>
-                                            <constraint firstItem="XMO-OG-qY1" firstAttribute="centerX" secondItem="lNW-hc-9RE" secondAttribute="centerX" id="84a-H4-bG4"/>
-                                            <constraint firstItem="XMO-OG-qY1" firstAttribute="centerX" secondItem="hfB-7e-bLB" secondAttribute="centerX" id="AuK-rn-yQM"/>
-                                            <constraint firstItem="XMO-OG-qY1" firstAttribute="centerX" secondItem="R47-qP-b3B" secondAttribute="centerX" id="JLq-fs-NTR"/>
-                                            <constraint firstItem="XMO-OG-qY1" firstAttribute="trailing" secondItem="uUC-Xf-rUk" secondAttribute="trailing" id="M12-ss-Lri"/>
-                                            <constraint firstItem="XMO-OG-qY1" firstAttribute="leading" secondItem="WIe-B8-TMy" secondAttribute="leading" id="NGg-DZ-i4r"/>
-                                            <constraint firstItem="XMO-OG-qY1" firstAttribute="trailing" secondItem="NRY-QF-4hl" secondAttribute="trailing" id="Oqi-co-JDv"/>
-                                            <constraint firstItem="XMO-OG-qY1" firstAttribute="trailing" secondItem="bga-MV-JWQ" secondAttribute="trailing" id="P9z-6w-mCe"/>
-                                            <constraint firstItem="XMO-OG-qY1" firstAttribute="leading" secondItem="NRY-QF-4hl" secondAttribute="leading" id="PI3-Un-GMS"/>
-                                            <constraint firstItem="XMO-OG-qY1" firstAttribute="centerX" secondItem="k8o-NS-4jG" secondAttribute="centerX" id="PQM-BV-QEh"/>
-                                            <constraint firstItem="XMO-OG-qY1" firstAttribute="top" secondItem="ve6-Fj-dSt" secondAttribute="bottom" constant="29.999999999999886" id="SFo-SY-xIF"/>
-                                            <constraint firstItem="XMO-OG-qY1" firstAttribute="trailing" secondItem="WIe-B8-TMy" secondAttribute="trailing" id="UMD-ZC-7BV"/>
-                                            <constraint firstAttribute="height" constant="3070" id="Xqf-SX-uVh"/>
-                                            <constraint firstItem="XMO-OG-qY1" firstAttribute="leading" secondItem="uUC-Xf-rUk" secondAttribute="leading" id="aUt-zO-aGa"/>
-                                            <constraint firstItem="XMO-OG-qY1" firstAttribute="centerX" secondItem="tsm-cM-oTJ" secondAttribute="centerX" id="axr-5a-Ts7"/>
-                                            <constraint firstItem="NRY-QF-4hl" firstAttribute="top" secondItem="XMO-OG-qY1" secondAttribute="bottom" constant="30" id="hKe-xG-8RJ"/>
-                                            <constraint firstItem="XMO-OG-qY1" firstAttribute="leading" secondItem="NOO-cc-4Ci" secondAttribute="leading" id="lrG-MX-dwy"/>
-                                            <constraint firstItem="XMO-OG-qY1" firstAttribute="leading" secondItem="vNL-KR-Y5N" secondAttribute="leading" id="mBm-gQ-YzP"/>
-                                            <constraint firstItem="XMO-OG-qY1" firstAttribute="centerX" secondItem="oMO-Ly-cp2" secondAttribute="centerX" id="mHg-Bi-Rox"/>
-                                            <constraint firstItem="NRY-QF-4hl" firstAttribute="centerX" secondItem="LIy-td-UNR" secondAttribute="centerX" id="nvD-fg-BC8"/>
-                                            <constraint firstItem="XMO-OG-qY1" firstAttribute="centerX" secondItem="6rc-Lm-6OC" secondAttribute="centerX" id="ny5-aA-aXV"/>
-                                            <constraint firstItem="XMO-OG-qY1" firstAttribute="leading" secondItem="bga-MV-JWQ" secondAttribute="leading" id="sDd-rj-in0"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="LIy-td-UNR" firstAttribute="centerX" secondItem="7Hn-zJ-TIo" secondAttribute="centerX" id="ARk-yc-FRd"/>
-                                    <constraint firstItem="LIy-td-UNR" firstAttribute="leading" secondItem="7Hn-zJ-TIo" secondAttribute="leading" id="VHG-Py-3RA"/>
-                                    <constraint firstItem="LIy-td-UNR" firstAttribute="top" secondItem="7Hn-zJ-TIo" secondAttribute="top" constant="-68" id="lFe-qE-dd1"/>
-                                    <constraint firstAttribute="trailing" secondItem="LIy-td-UNR" secondAttribute="trailing" id="xXm-5D-GBm"/>
-                                    <constraint firstAttribute="bottom" secondItem="LIy-td-UNR" secondAttribute="bottom" constant="-90" id="xZB-x5-NtO"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="8gS-jW-nve"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="7Hn-zJ-TIo" firstAttribute="top" secondItem="8gS-jW-nve" secondAttribute="top" id="5Fe-sV-Um5"/>
-                            <constraint firstItem="7Hn-zJ-TIo" firstAttribute="leading" secondItem="bbN-F6-qSt" secondAttribute="leading" id="J5P-CY-I7U"/>
-                            <constraint firstAttribute="bottom" secondItem="7Hn-zJ-TIo" secondAttribute="bottom" id="SIN-ud-tog"/>
-                            <constraint firstAttribute="trailing" secondItem="7Hn-zJ-TIo" secondAttribute="trailing" id="fxG-dX-Oth"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="0f7-HO-rj8"/>
-                    <size key="freeformSize" width="428" height="3000"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P45-gf-zpx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2043.9252336448596" y="-130.23758099352054"/>
+            <point key="canvasLocation" x="2629" y="-3104"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="WZF-ak-cbl">
@@ -2891,12 +2815,12 @@ Frequently Asked Questions</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GLN-C0-1BQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1180.3738317757009" y="-89.416846652267822"/>
+            <point key="canvasLocation" x="-642" y="-3778"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="T1c-fg-ycW"/>
-        <segue reference="KPv-Xi-iyA"/>
+        <segue reference="Q0n-Oq-XYk"/>
+        <segue reference="bv5-45-qbA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AboutUs" width="120" height="120"/>
