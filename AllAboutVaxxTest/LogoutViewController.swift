@@ -30,7 +30,4 @@ class LogoutViewController: UIViewController {
             
         }
     }
-    
-    
-
 }

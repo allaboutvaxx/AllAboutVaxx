@@ -17,6 +17,7 @@ class LogInViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBOutlet var warning: UILabel!
     //override func viewDidAppear(_ animated: Bool) {
         //checkUserInfo()
     //}
@@ -55,6 +56,7 @@ class LogInViewController: UIViewController {
             guard let strongSelf = self else {return}
             if let err = err {
                 print(err.localizedDescription)
+                self?.warning.text = "Login credentials are incorrect. Try again."
             }
             self!.checkUserInfo()
         }

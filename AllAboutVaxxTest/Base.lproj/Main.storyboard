@@ -163,8 +163,15 @@
                                     <action selector="loginTapped:" destination="HMA-M6-Rx2" eventType="touchUpInside" id="12G-fr-2hx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type your login credentials above." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANF-8w-yP7">
+                                <rect key="frame" x="88" y="379" width="260" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyV-ZG-lYW">
-                                <rect key="frame" x="57" y="384" width="322" height="31"/>
+                                <rect key="frame" x="53" y="514" width="322" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Don't have an account yet? Create an account"/>
@@ -180,6 +187,7 @@
                     <connections>
                         <outlet property="email" destination="xn7-Dt-P0I" id="SL9-jf-jGg"/>
                         <outlet property="password" destination="wEE-MA-BWS" id="vJS-ze-MqS"/>
+                        <outlet property="warning" destination="ANF-8w-yP7" id="fn9-uj-Uh8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mdT-pM-bxA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
