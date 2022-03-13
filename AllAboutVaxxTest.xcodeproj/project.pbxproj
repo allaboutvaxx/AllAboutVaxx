@@ -28,6 +28,7 @@
 		3CC8820827AE05EC00F6C3B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CC8820627AE05EC00F6C3B1 /* Main.storyboard */; };
 		3CC8820A27AE05EE00F6C3B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC8820927AE05EE00F6C3B1 /* Assets.xcassets */; };
 		3CC8820D27AE05EE00F6C3B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CC8820B27AE05EE00F6C3B1 /* LaunchScreen.storyboard */; };
+		C7A4B01B27DDE44A007E50D8 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A4B01A27DDE44A007E50D8 /* LogoutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +59,7 @@
 		3CC8820C27AE05EE00F6C3B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CC8820E27AE05EE00F6C3B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CEAC86927B098A200C71F2C /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		C7A4B01A27DDE44A007E50D8 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				1B13E9DB27C15B3100F02EAD /* ResultScreenViewController.swift */,
 				1B56820827D9191A001DAF87 /* LogInViewController.swift */,
 				1B56820A27D9193A001DAF87 /* SignUpViewController.swift */,
+				C7A4B01A27DDE44A007E50D8 /* LogoutViewController.swift */,
 				3CC8820627AE05EC00F6C3B1 /* Main.storyboard */,
 				3CC8820927AE05EE00F6C3B1 /* Assets.xcassets */,
 				3CC8820B27AE05EE00F6C3B1 /* LaunchScreen.storyboard */,
@@ -219,6 +222,7 @@
 				1B56820927D9191A001DAF87 /* LogInViewController.swift in Sources */,
 				3CC8820327AE05EC00F6C3B1 /* SceneDelegate.swift in Sources */,
 				1B13E9DA27C159C700F02EAD /* HealthScreeningVC.swift in Sources */,
+				C7A4B01B27DDE44A007E50D8 /* LogoutViewController.swift in Sources */,
 				1B13E9DC27C15B3100F02EAD /* ResultScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
