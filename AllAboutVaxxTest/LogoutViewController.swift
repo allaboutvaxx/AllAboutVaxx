@@ -10,8 +10,9 @@ import Firebase
 import FirebaseAuth
 
 class LogoutViewController: UIViewController {
+
+    @IBOutlet weak var mainMenu: UILabel!
     
-    @IBOutlet weak var ResultLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,10 +20,9 @@ class LogoutViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func LogoutButton(_ sender: Any) {
-        
+    
+    @IBAction func Logout(_ sender: Any) {
         let auth = Auth.auth()
-        
         do{
             try auth.signOut()
             self.dismiss(animated: true, completion: nil)
