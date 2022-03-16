@@ -50,7 +50,7 @@
 		1B56820827D9191A001DAF87 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		1B56820A27D9193A001DAF87 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1BD50B9627D4F3BB0016ED7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		3CC881FD27AE05EC00F6C3B1 /* AllAboutVaxxTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllAboutVaxxTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CC881FD27AE05EC00F6C3B1 /* AllAboutVaxx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllAboutVaxx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC8820027AE05EC00F6C3B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CC8820227AE05EC00F6C3B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3CC8820427AE05EC00F6C3B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		3CC881FE27AE05EC00F6C3B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3CC881FD27AE05EC00F6C3B1 /* AllAboutVaxxTest.app */,
+				3CC881FD27AE05EC00F6C3B1 /* AllAboutVaxx.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,9 +131,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3CC881FC27AE05EC00F6C3B1 /* AllAboutVaxxTest */ = {
+		3CC881FC27AE05EC00F6C3B1 /* AllAboutVaxx */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3CC8822727AE05EF00F6C3B1 /* Build configuration list for PBXNativeTarget "AllAboutVaxxTest" */;
+			buildConfigurationList = 3CC8822727AE05EF00F6C3B1 /* Build configuration list for PBXNativeTarget "AllAboutVaxx" */;
 			buildPhases = (
 				3CC881F927AE05EC00F6C3B1 /* Sources */,
 				3CC881FA27AE05EC00F6C3B1 /* Frameworks */,
@@ -144,7 +144,7 @@
 			);
 			dependencies = (
 			);
-			name = AllAboutVaxxTest;
+			name = AllAboutVaxx;
 			packageProductDependencies = (
 				1BD50B9927D4F44B0016ED7C /* FirebaseAnalytics */,
 				1BD50B9B27D4F44B0016ED7C /* FirebaseAnalyticsSwift-Beta */,
@@ -158,7 +158,7 @@
 				1BD50BAB27D4F44C0016ED7C /* FirebaseStorageSwift-Beta */,
 			);
 			productName = AllAboutVaxxTest;
-			productReference = 3CC881FD27AE05EC00F6C3B1 /* AllAboutVaxxTest.app */;
+			productReference = 3CC881FD27AE05EC00F6C3B1 /* AllAboutVaxx.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -192,7 +192,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3CC881FC27AE05EC00F6C3B1 /* AllAboutVaxxTest */,
+				3CC881FC27AE05EC00F6C3B1 /* AllAboutVaxx */,
 			);
 		};
 /* End PBXProject section */
@@ -377,6 +377,7 @@
 				DEVELOPMENT_TEAM = UP65C34UXY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AllAboutVaxxTest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AllAboutVaxx;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -408,6 +409,7 @@
 				DEVELOPMENT_TEAM = UP65C34UXY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AllAboutVaxxTest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AllAboutVaxx;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -439,7 +441,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3CC8822727AE05EF00F6C3B1 /* Build configuration list for PBXNativeTarget "AllAboutVaxxTest" */ = {
+		3CC8822727AE05EF00F6C3B1 /* Build configuration list for PBXNativeTarget "AllAboutVaxx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3CC8822827AE05EF00F6C3B1 /* Debug */,
