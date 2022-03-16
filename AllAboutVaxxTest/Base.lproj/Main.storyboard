@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2MC-Mw-KLK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NaH-l6-HDc">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AllAboutVaxxTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEW-wc-tbH">
-                                <rect key="frame" x="54" y="503" width="320" height="125"/>
+                                <rect key="frame" x="54" y="591" width="320" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="Pur-YJ-w6I"/>
                                 </constraints>
@@ -28,7 +28,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ue-3F-LM1">
-                                <rect key="frame" x="52" y="71" width="324" height="120"/>
+                                <rect key="frame" x="52" y="159" width="324" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="Wl3-cD-5TA"/>
                                 </constraints>
@@ -37,7 +37,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ux3-un-w8s">
-                                <rect key="frame" x="232" y="203" width="144" height="134"/>
+                                <rect key="frame" x="232" y="291" width="144" height="134"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="News" title=""/>
                                 <connections>
@@ -51,15 +51,12 @@
                                 <buttonConfiguration key="configuration" style="plain"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8G-ox-4dO">
-                                <rect key="frame" x="55" y="349" width="318" height="142"/>
+                                <rect key="frame" x="55" y="437" width="318" height="142"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="Record" title=""/>
-                                <connections>
-                                    <segue destination="HMA-M6-Rx2" kind="show" id="dZP-E4-HoB"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fm-IO-Ykl">
-                                <rect key="frame" x="52" y="203" width="144" height="134"/>
+                                <rect key="frame" x="52" y="291" width="144" height="134"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="Check" title=""/>
                                 <connections>
@@ -75,13 +72,13 @@
                                 <color key="shadowColor" systemColor="labelColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All About Vaxx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEE-oi-1xA">
-                                <rect key="frame" x="74.666666666666657" y="0.0" width="278.66666666666674" height="46"/>
+                                <rect key="frame" x="74.666666666666657" y="88" width="278.66666666666674" height="46"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tr-we-ovn">
-                                <rect key="frame" x="52" y="640" width="144" height="134"/>
+                                <rect key="frame" x="52" y="728" width="144" height="134"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="FAQ" title=""/>
                                 <connections>
@@ -89,13 +86,22 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKk-8w-KS4">
-                                <rect key="frame" x="232" y="640" width="144" height="134"/>
+                                <rect key="frame" x="232" y="728" width="144" height="134"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="AboutUs" title="">
                                     <color key="baseBackgroundColor" systemColor="linkColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="aRl-8k-4nI" kind="show" id="VNb-iX-waI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcW-U5-pGs">
+                                <rect key="frame" x="308" y="807" width="70" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Logout"/>
+                                <connections>
+                                    <action selector="Logout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tMS-BX-K9b"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -122,17 +128,47 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qkY-lO-KnP"/>
+                    <connections>
+                        <outlet property="mainMenu" destination="PEE-oi-1xA" id="xMB-Dd-lWU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="179.43925233644859" y="-802.80777537796985"/>
+            <point key="canvasLocation" x="3779.4392523364486" y="-802.80777537796985"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="f21-H6-IOF">
+            <objects>
+                <viewController id="61z-Cu-Qns" customClass="ViewController" customModule="AllAboutVaxxTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CNt-aj-lqw">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecy-bQ-mlx">
+                                <rect key="frame" x="185" y="309" width="60" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                                <connections>
+                                    <segue destination="HMA-M6-Rx2" kind="show" id="1Pw-GH-FjI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3E7-XX-GWt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FmE-88-NLq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pbW-Dv-UcL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3761.2149532710278" y="-118.5745140388769"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="zo6-Mk-liT">
             <objects>
                 <viewController storyboardIdentifier="logIn" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HMA-M6-Rx2" customClass="LogInViewController" customModule="AllAboutVaxxTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zj1-nX-Pau">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaP-wg-kru">
@@ -192,7 +228,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mdT-pM-bxA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="175.23364485981307" y="-111.44708423326135"/>
+            <point key="canvasLocation" x="4851.8691588785041" y="-119.22246220302377"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="5Cv-kp-YMX">
@@ -250,23 +286,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="emS-uQ-4UG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="900" y="-111.44708423326135"/>
+            <point key="canvasLocation" x="5862.6168224299063" y="-119.22246220302377"/>
         </scene>
         <!--Logout View Controller-->
         <scene sceneID="oqO-by-Qkr">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ymk-dV-NWm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="loginHome" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HeB-rX-cpa" customClass="LogoutViewController" customModule="AllAboutVaxxTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oOk-gp-UEX">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4c-Yo-FSO">
-                                <rect key="frame" x="186" y="77" width="56" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9C-i4-UPt">
                                 <rect key="frame" x="36" y="44" width="70" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -276,29 +306,32 @@
                                     <action selector="LogoutButton:" destination="HeB-rX-cpa" eventType="touchUpInside" id="siL-Ps-8Mt"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Go to the main menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxY-Uu-tIG">
+                                <rect key="frame" x="122" y="336" width="184" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="o4u-YF-OWe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <toolbarItems/>
-                    <connections>
-                        <outlet property="ResultLabel" destination="l4c-Yo-FSO" id="olg-re-LAr"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ymk-dV-NWm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1643" y="-111"/>
+            <point key="canvasLocation" x="7042.9906542056069" y="-111.44708423326135"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="waY-DV-7tJ">
             <objects>
                 <viewController id="RNe-Cp-XFV" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qT0-fD-K55">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="7946"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="8000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fwl-G1-gbd">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="7946"/>
+                                <rect key="frame" x="0.0" y="88" width="428" height="7912"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fn-Wy-uLG">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="7946"/>
@@ -752,18 +785,18 @@ CDC recommends that people who are starting their vaccine series or getting a bo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s8c-Zd-WxC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5070.5607476635514" y="-1484.4492440604752"/>
+            <point key="canvasLocation" x="14070.560747663551" y="-1484.4492440604752"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cqc-zU-pw8">
             <objects>
                 <viewController id="ajz-9z-F2q" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="scQ-zM-hIc">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="4946"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="5000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h37-p9-gef">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="4946"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="5000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jp7-4M-OVJ">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="5000"/>
@@ -920,18 +953,18 @@ CDC recommends that people who are starting their vaccine series or getting a bo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5w-gY-g3E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6513" y="-2458"/>
+            <point key="canvasLocation" x="10111.682242990653" y="-2458.3153347732182"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gXp-EU-Q4C">
             <objects>
                 <viewController id="XiP-4E-oW5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EHo-0I-woX">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="4838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="4892"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="di5-q1-AdN">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="4838"/>
+                                <rect key="frame" x="0.0" y="88" width="428" height="4804"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wj2-vt-6rh">
                                         <rect key="frame" x="0.0" y="0.0" width="420" height="5000"/>
@@ -1087,18 +1120,18 @@ CDC recommends that people who are starting their vaccine series or getting a bo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lZI-8q-vl8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7307" y="-2493"/>
+            <point key="canvasLocation" x="10906.542056074766" y="-2493.304535637149"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HWW-xi-OUR">
             <objects>
                 <viewController id="Ypd-SW-aau" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aqg-Xt-x21">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="4946"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="5000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vPW-1r-wMQ">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="4946"/>
+                                <rect key="frame" x="0.0" y="88" width="428" height="4912"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cks-fm-QIt">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="5000"/>
@@ -1254,18 +1287,18 @@ CDC recommends that people who are starting their vaccine series or getting a bo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MZK-vf-HvL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8029" y="-2458"/>
+            <point key="canvasLocation" x="11628.504672897196" y="-2458.3153347732182"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="w68-yT-n9d">
             <objects>
                 <viewController id="1qk-5t-QO6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Atl-2f-gmR">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="4946"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="5000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6b3-A3-ffx">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="4946"/>
+                                <rect key="frame" x="0.0" y="88" width="428" height="4912"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORf-7r-0Hi">
                                         <rect key="frame" x="0.0" y="0.0" width="445" height="5000"/>
@@ -1425,18 +1458,18 @@ CDC recommends that people who are starting their vaccine series or getting a bo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zgB-AK-QNa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8828" y="-2456"/>
+            <point key="canvasLocation" x="12427.570093457944" y="-2456.3714902807778"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pul-aa-gZz">
             <objects>
                 <viewController id="ral-Sd-jej" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CBo-oR-RSg">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="4946"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="5000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ivC-1Y-3eQ">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="4946"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="5000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZ8-yZ-1k7">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="5000"/>
@@ -1824,18 +1857,18 @@ Nasal: congestion or sneezing
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZ9-e7-435" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5766" y="-2458"/>
+            <point key="canvasLocation" x="9364.4859813084113" y="-2458.3153347732182"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="WgW-KQ-fOe">
             <objects>
                 <viewController id="ahr-SZ-TIm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rv2-jQ-GPD">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BtO-q6-sZT">
-                                <rect key="frame" x="37" y="32" width="354" height="46"/>
+                                <rect key="frame" x="37" y="120" width="354" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="354" id="72J-FU-Ib9"/>
                                     <constraint firstAttribute="height" constant="46" id="NSb-ZP-oR1"/>
@@ -1851,7 +1884,7 @@ Nasal: congestion or sneezing
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBm-vO-7zj">
-                                <rect key="frame" x="37" y="112" width="355" height="60"/>
+                                <rect key="frame" x="37" y="200" width="355" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="355" id="aRl-Jx-XI6"/>
                                     <constraint firstAttribute="height" constant="60" id="i2k-nc-iHb"/>
@@ -1871,7 +1904,7 @@ Nasal: congestion or sneezing
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsp-MT-xgL">
-                                <rect key="frame" x="37" y="301" width="355" height="60"/>
+                                <rect key="frame" x="37" y="389" width="355" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Tax-WJ-MmF"/>
                                     <constraint firstAttribute="width" constant="355" id="YdR-YF-2Gj"/>
@@ -1883,7 +1916,7 @@ Nasal: congestion or sneezing
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TuX-56-2x7">
-                                <rect key="frame" x="37" y="405" width="355" height="60"/>
+                                <rect key="frame" x="37" y="493" width="355" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="355" id="gBm-9n-vCj"/>
                                     <constraint firstAttribute="height" constant="60" id="v6u-1h-ndM"/>
@@ -1895,7 +1928,7 @@ Nasal: congestion or sneezing
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDD-0G-2hj">
-                                <rect key="frame" x="37" y="507" width="355" height="60"/>
+                                <rect key="frame" x="37" y="595" width="355" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="hIn-vr-RhS"/>
                                     <constraint firstAttribute="width" constant="355" id="iK1-RR-DTK"/>
@@ -1907,7 +1940,7 @@ Nasal: congestion or sneezing
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8D4-rl-fOr">
-                                <rect key="frame" x="37" y="607" width="355" height="55"/>
+                                <rect key="frame" x="37" y="695" width="355" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="355" id="7nJ-uQ-drK"/>
                                     <constraint firstAttribute="height" constant="55" id="fSv-Jt-nfb"/>
@@ -1919,7 +1952,7 @@ Nasal: congestion or sneezing
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvT-Oo-gqv">
-                                <rect key="frame" x="37" y="208" width="355" height="60"/>
+                                <rect key="frame" x="37" y="296" width="355" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="rjb-2n-GtK"/>
                                     <constraint firstAttribute="width" constant="355" id="zPP-DC-Wbh"/>
@@ -1963,30 +1996,12 @@ Nasal: congestion or sneezing
             </objects>
             <point key="canvasLocation" x="4172" y="-3776"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="ZiR-Sp-ro8">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2MC-Mw-KLK" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EVB-E2-tLe">
-                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KPv-Xi-iyA"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c2S-VF-rAt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-730.43478260869574" y="-802.23214285714278"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="o8t-Sd-zUh">
             <objects>
                 <viewController id="aRl-8k-4nI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f3A-0K-1HS">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is the date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jV-ex-iiM">
@@ -2004,14 +2019,14 @@ Nasal: congestion or sneezing
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bBg-4o-fvd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1479" y="-803"/>
+            <point key="canvasLocation" x="5077.5700934579436" y="-803.45572354211674"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FfB-FK-mnk">
             <objects>
                 <viewController id="LUs-Tm-YtJ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TqF-ch-kDc">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is the news place" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uB0-Qw-Nuk">
@@ -2029,18 +2044,18 @@ Nasal: congestion or sneezing
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IEn-Ui-KVV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2265" y="-803"/>
+            <point key="canvasLocation" x="5862.6168224299063" y="-803.45572354211674"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ZVf-0Q-gpc">
             <objects>
                 <viewController id="E1G-Sq-nuK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aq1-Ma-NtM">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="4694"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="4748"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fdq-2J-MwG">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="4694"/>
+                                <rect key="frame" x="0.0" y="88" width="428" height="4660"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8YI-9L-Egl">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="4000"/>
@@ -2346,14 +2361,14 @@ Some have speculated that thimerosal (a mercury-containing chemical) in vaccines
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wtm-9i-gfM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3384" y="-2539"/>
+            <point key="canvasLocation" x="6982.7102803738317" y="-2539.3088552915769"/>
         </scene>
         <!--Health ScreeningVC-->
         <scene sceneID="ykc-hH-eSp">
             <objects>
                 <viewController id="9WB-Y0-GSv" customClass="HealthScreeningVC" customModule="AllAboutVaxxTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yHo-5D-bqX">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mj7-La-IqJ">
@@ -2402,11 +2417,11 @@ Some have speculated that thimerosal (a mercury-containing chemical) in vaccines
             <objects>
                 <viewController id="cB4-Cn-cEf" customClass="ResultScreenViewController" customModule="AllAboutVaxxTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8qZ-Lt-5eA">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="1146"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1k-hp-kof">
-                                <rect key="frame" x="0.0" y="31" width="428" height="1112"/>
+                                <rect key="frame" x="0.0" y="119" width="428" height="1078"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vvr-dW-7Yn">
                                         <rect key="frame" x="0.0" y="-88" width="428" height="1200"/>
@@ -2431,9 +2446,6 @@ Some have speculated that thimerosal (a mercury-containing chemical) in vaccines
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Restart the Quiz"/>
-                                                <connections>
-                                                    <segue destination="orl-CA-Azr" kind="show" id="T1c-fg-ycW"/>
-                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkp-b4-bdj">
                                                 <rect key="frame" x="44" y="384.33333333333326" width="340" height="400"/>
@@ -2497,11 +2509,11 @@ Some have speculated that thimerosal (a mercury-containing chemical) in vaccines
             <objects>
                 <viewController id="Ib3-ht-W6A" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hVN-oy-VPM">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iev-My-Wnv">
-                                <rect key="frame" x="146" y="300" width="136" height="31"/>
+                                <rect key="frame" x="146" y="388" width="136" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="COVID - 19 FAQS"/>
                                 <connections>
@@ -2509,7 +2521,7 @@ Some have speculated that thimerosal (a mercury-containing chemical) in vaccines
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljv-93-aZJ">
-                                <rect key="frame" x="125.66666666666669" y="361" width="177" height="31"/>
+                                <rect key="frame" x="125.66666666666669" y="449" width="177" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Common Vaccine FAQS"/>
                                 <connections>
@@ -2518,7 +2530,7 @@ Some have speculated that thimerosal (a mercury-containing chemical) in vaccines
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0ew-J9-h2k"/>
-                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="iev-My-Wnv" firstAttribute="top" secondItem="0ew-J9-h2k" secondAttribute="top" constant="300" id="FUp-UE-zUS"/>
                             <constraint firstItem="iev-My-Wnv" firstAttribute="centerX" secondItem="hVN-oy-VPM" secondAttribute="centerX" id="cob-F5-wI9"/>
@@ -2537,11 +2549,11 @@ Some have speculated that thimerosal (a mercury-containing chemical) in vaccines
             <objects>
                 <viewController id="KTL-cX-Yca" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8hS-Of-8b5">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="2946"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="3000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Wb-YU-ddD">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="2946"/>
+                                <rect key="frame" x="0.0" y="88" width="428" height="2912"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IPb-IK-SSg">
                                         <rect key="frame" x="0.0" y="0.0" width="438" height="3000"/>
@@ -2807,7 +2819,7 @@ infectious?</string>
             <objects>
                 <viewController id="orl-CA-Azr" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vlT-mY-Z80">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfq-yD-0vo">
@@ -2824,9 +2836,6 @@ infectious?</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Return to the Main Menu"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="bv5-45-qbA"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="o7c-Ln-JXJ"/>
@@ -2838,11 +2847,43 @@ infectious?</string>
             </objects>
             <point key="canvasLocation" x="-642" y="-3778"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="M6f-2d-2fZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NaH-l6-HDc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nel-DS-m6P">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="61z-Cu-Qns" kind="relationship" relationship="rootViewController" id="ghh-DD-Y1U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="biY-TA-FwQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2861.2149532710278" y="-118.5745140388769"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="v7L-cI-7rO">
+            <objects>
+                <navigationController storyboardIdentifier="mainMenu" automaticallyAdjustsScrollViewInsets="NO" id="CEr-KE-ozv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8EU-AH-FjB">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oJO-bs-OkY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M0I-3M-Mka" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2879.4392523364486" y="-802.80777537796985"/>
+        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Q0n-Oq-XYk"/>
-        <segue reference="bv5-45-qbA"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="AboutUs" width="120" height="120"/>
         <image name="Check" width="120" height="120"/>
