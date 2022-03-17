@@ -25,7 +25,10 @@ class ViewController: UIViewController {
         let auth = Auth.auth()
         do{
             try auth.signOut()
-            self.dismiss(animated: true, completion: nil)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "logIn")
+            vc.modalPresentationStyle = .overFullScreen
+            present(vc, animated: true)
         } catch let signOutError{
             
         }
