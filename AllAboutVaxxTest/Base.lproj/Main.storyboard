@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AllAboutVaxxTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AllAboutVaxx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,15 +95,6 @@
                                     <segue destination="aRl-8k-4nI" kind="show" id="VNb-iX-waI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcW-U5-pGs">
-                                <rect key="frame" x="308" y="807" width="70" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Logout"/>
-                                <connections>
-                                    <action selector="Logout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tMS-BX-K9b"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -127,7 +118,19 @@
                             <constraint firstItem="o8G-ox-4dO" firstAttribute="top" secondItem="Ux3-un-w8s" secondAttribute="bottom" constant="12" id="yis-HL-HvE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="qkY-lO-KnP"/>
+                    <navigationItem key="navigationItem" id="qkY-lO-KnP">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="mAA-ib-Zuk">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="XcW-U5-pGs">
+                                <rect key="frame" x="330.66666666666669" y="5" width="77.333333333333314" height="34.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Logout"/>
+                                <connections>
+                                    <action selector="Logout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tMS-BX-K9b"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mainMenu" destination="PEE-oi-1xA" id="xMB-Dd-lWU"/>
                     </connections>
@@ -139,16 +142,18 @@
         <!--View Controller-->
         <scene sceneID="f21-H6-IOF">
             <objects>
-                <viewController id="61z-Cu-Qns" customClass="ViewController" customModule="AllAboutVaxxTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="61z-Cu-Qns" customClass="ViewController" customModule="AllAboutVaxx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CNt-aj-lqw">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecy-bQ-mlx">
-                                <rect key="frame" x="185" y="309" width="60" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecy-bQ-mlx">
+                                <rect key="frame" x="64" y="738" width="300" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="afV-NF-Xfm"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Get Started"/>
                                 <connections>
                                     <segue destination="HMA-M6-Rx2" kind="show" id="1Pw-GH-FjI"/>
                                 </connections>
@@ -156,6 +161,11 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3E7-XX-GWt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ecy-bQ-mlx" firstAttribute="top" secondItem="3E7-XX-GWt" secondAttribute="top" constant="650" id="qQd-mf-ZCE"/>
+                            <constraint firstItem="Ecy-bQ-mlx" firstAttribute="centerX" secondItem="CNt-aj-lqw" secondAttribute="centerX" id="sDO-Uy-fab"/>
+                            <constraint firstItem="3E7-XX-GWt" firstAttribute="bottom" secondItem="Ecy-bQ-mlx" secondAttribute="bottom" constant="80" id="zgk-Kc-WU1"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FmE-88-NLq"/>
                 </viewController>
@@ -166,49 +176,50 @@
         <!--Log In View Controller-->
         <scene sceneID="zo6-Mk-liT">
             <objects>
-                <viewController storyboardIdentifier="logIn" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HMA-M6-Rx2" customClass="LogInViewController" customModule="AllAboutVaxxTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="logIn" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HMA-M6-Rx2" customClass="LogInViewController" customModule="AllAboutVaxx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zj1-nX-Pau">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaP-wg-kru">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaP-wg-kru">
                                 <rect key="frame" x="197" y="84" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xn7-Dt-P0I">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xn7-Dt-P0I">
                                 <rect key="frame" x="70" y="141" width="289" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wEE-MA-BWS">
-                                <rect key="frame" x="70" y="211" width="289" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wEE-MA-BWS">
+                                <rect key="frame" x="70" y="211" width="288" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYn-K1-5H3">
-                                <rect key="frame" x="188" y="306" width="60" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYn-K1-5H3">
+                                <rect key="frame" x="164" y="306" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="tJ1-6c-24g"/>
+                                    <constraint firstAttribute="width" constant="100" id="wW9-MI-yej"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Login"/>
                                 <connections>
                                     <action selector="loginTapped:" destination="HMA-M6-Rx2" eventType="touchUpInside" id="12G-fr-2hx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type your login credentials above." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANF-8w-yP7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type your login credentials above." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANF-8w-yP7">
                                 <rect key="frame" x="88" y="379" width="260" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="HJV-PA-V4b"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyV-ZG-lYW">
-                                <rect key="frame" x="53" y="514" width="322" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyV-ZG-lYW">
+                                <rect key="frame" x="53" y="617" width="322" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Don't have an account yet? Create an account"/>
                                 <connections>
@@ -218,6 +229,23 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nZs-up-bia"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wEE-MA-BWS" firstAttribute="top" secondItem="Zj1-nX-Pau" secondAttribute="top" constant="211" id="0YS-M8-Hgp"/>
+                            <constraint firstItem="nZs-up-bia" firstAttribute="trailing" secondItem="ANF-8w-yP7" secondAttribute="trailing" constant="80" id="FZm-JU-qx3"/>
+                            <constraint firstItem="ANF-8w-yP7" firstAttribute="centerX" secondItem="CaP-wg-kru" secondAttribute="centerX" id="KHx-9O-ZgM"/>
+                            <constraint firstItem="nZs-up-bia" firstAttribute="bottom" secondItem="gyV-ZG-lYW" secondAttribute="bottom" constant="347" id="Kfo-AW-9XO"/>
+                            <constraint firstItem="wEE-MA-BWS" firstAttribute="leading" secondItem="xn7-Dt-P0I" secondAttribute="leading" id="R4K-sT-6Ni"/>
+                            <constraint firstItem="wEE-MA-BWS" firstAttribute="centerX" secondItem="gyV-ZG-lYW" secondAttribute="centerX" id="RMr-O6-uej"/>
+                            <constraint firstItem="gyV-ZG-lYW" firstAttribute="top" secondItem="ANF-8w-yP7" secondAttribute="bottom" constant="65" id="Rca-JY-Agr"/>
+                            <constraint firstItem="wEE-MA-BWS" firstAttribute="leading" secondItem="nZs-up-bia" secondAttribute="leading" constant="70" id="fOU-zR-9ey"/>
+                            <constraint firstItem="wEE-MA-BWS" firstAttribute="centerX" secondItem="wYn-K1-5H3" secondAttribute="centerX" id="fzh-Ch-W85"/>
+                            <constraint firstItem="ANF-8w-yP7" firstAttribute="leading" secondItem="nZs-up-bia" secondAttribute="leading" constant="88" id="h6V-KD-2zq"/>
+                            <constraint firstItem="xn7-Dt-P0I" firstAttribute="top" secondItem="CaP-wg-kru" secondAttribute="bottom" constant="36" id="lkq-2G-JcX"/>
+                            <constraint firstItem="wYn-K1-5H3" firstAttribute="top" secondItem="wEE-MA-BWS" secondAttribute="bottom" constant="61" id="nxm-SA-bIh"/>
+                            <constraint firstItem="wYn-K1-5H3" firstAttribute="centerX" secondItem="Zj1-nX-Pau" secondAttribute="centerX" id="olg-dj-N7F"/>
+                            <constraint firstItem="wEE-MA-BWS" firstAttribute="trailing" secondItem="xn7-Dt-P0I" secondAttribute="trailing" id="uqH-Ok-dKk"/>
+                            <constraint firstItem="wEE-MA-BWS" firstAttribute="top" secondItem="xn7-Dt-P0I" secondAttribute="bottom" constant="36" id="yfG-LG-lco"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9ty-sr-wcQ"/>
                     <connections>
@@ -233,42 +261,41 @@
         <!--Sign Up View Controller-->
         <scene sceneID="5Cv-kp-YMX">
             <objects>
-                <viewController storyboardIdentifier="signUp" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yJR-oB-NUb" customClass="SignUpViewController" customModule="AllAboutVaxxTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signUp" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yJR-oB-NUb" customClass="SignUpViewController" customModule="AllAboutVaxx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yVX-mK-B4Z">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cU8-kz-3ce">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cU8-kz-3ce">
                                 <rect key="frame" x="184" y="78" width="60" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rhs-cG-kqc">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rhs-cG-kqc">
                                 <rect key="frame" x="75" y="141" width="278" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bfY-vb-OtP">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bfY-vb-OtP">
                                 <rect key="frame" x="75" y="233" width="278" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKG-Jy-TYq">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKG-Jy-TYq">
                                 <rect key="frame" x="98" y="380" width="233" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Already have an account? Log in"/>
                                 <connections>
                                     <action selector="alreadyHaveAnAccountTapped:" destination="yJR-oB-NUb" eventType="touchUpInside" id="xeF-VH-MUi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoL-gW-nPG">
-                                <rect key="frame" x="177" y="301" width="75" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoL-gW-nPG">
+                                <rect key="frame" x="164" y="301" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="6yR-Kf-K2B"/>
+                                    <constraint firstAttribute="height" constant="50" id="JVc-Gd-c99"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Sign Up"/>
                                 <connections>
@@ -278,6 +305,21 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IzJ-T8-dN5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cU8-kz-3ce" firstAttribute="top" secondItem="IzJ-T8-dN5" secondAttribute="top" constant="34" id="7h2-f4-T7T"/>
+                            <constraint firstItem="bfY-vb-OtP" firstAttribute="top" secondItem="yVX-mK-B4Z" secondAttribute="top" constant="233" id="94C-ce-Otd"/>
+                            <constraint firstItem="XKG-Jy-TYq" firstAttribute="leading" secondItem="IzJ-T8-dN5" secondAttribute="leading" constant="98" id="BCl-Tx-rew"/>
+                            <constraint firstItem="YoL-gW-nPG" firstAttribute="top" secondItem="bfY-vb-OtP" secondAttribute="bottom" constant="34" id="F7Y-UQ-NzA"/>
+                            <constraint firstItem="bfY-vb-OtP" firstAttribute="trailing" secondItem="Rhs-cG-kqc" secondAttribute="trailing" id="NtI-4F-lD7"/>
+                            <constraint firstItem="bfY-vb-OtP" firstAttribute="centerX" secondItem="XKG-Jy-TYq" secondAttribute="centerX" id="V8X-T0-IzM"/>
+                            <constraint firstItem="XKG-Jy-TYq" firstAttribute="top" secondItem="YoL-gW-nPG" secondAttribute="bottom" constant="29" id="gMm-7m-o1u"/>
+                            <constraint firstItem="bfY-vb-OtP" firstAttribute="centerX" secondItem="YoL-gW-nPG" secondAttribute="centerX" id="jOH-hg-R9m"/>
+                            <constraint firstItem="bfY-vb-OtP" firstAttribute="leading" secondItem="IzJ-T8-dN5" secondAttribute="leading" constant="75" id="kEH-MJ-qFj"/>
+                            <constraint firstItem="bfY-vb-OtP" firstAttribute="centerX" secondItem="cU8-kz-3ce" secondAttribute="centerX" id="mk8-EX-ZCw"/>
+                            <constraint firstItem="YoL-gW-nPG" firstAttribute="centerX" secondItem="yVX-mK-B4Z" secondAttribute="centerX" id="nRE-fV-Df7"/>
+                            <constraint firstItem="bfY-vb-OtP" firstAttribute="top" secondItem="Rhs-cG-kqc" secondAttribute="bottom" constant="58" id="rYv-Zy-a2c"/>
+                            <constraint firstItem="bfY-vb-OtP" firstAttribute="leading" secondItem="Rhs-cG-kqc" secondAttribute="leading" id="rjt-Cb-bfU"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="email" destination="Rhs-cG-kqc" id="hnX-TZ-1L6"/>
@@ -291,8 +333,7 @@
         <!--Logout View Controller-->
         <scene sceneID="oqO-by-Qkr">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ymk-dV-NWm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="loginHome" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HeB-rX-cpa" customClass="LogoutViewController" customModule="AllAboutVaxxTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginHome" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HeB-rX-cpa" customClass="LogoutViewController" customModule="AllAboutVaxx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oOk-gp-UEX">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -319,6 +360,7 @@
                     </view>
                     <toolbarItems/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ymk-dV-NWm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7042.9906542056069" y="-111.44708423326135"/>
         </scene>
@@ -2366,7 +2408,7 @@ Some have speculated that thimerosal (a mercury-containing chemical) in vaccines
         <!--Health ScreeningVC-->
         <scene sceneID="ykc-hH-eSp">
             <objects>
-                <viewController id="9WB-Y0-GSv" customClass="HealthScreeningVC" customModule="AllAboutVaxxTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9WB-Y0-GSv" customClass="HealthScreeningVC" customModule="AllAboutVaxx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yHo-5D-bqX">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2415,7 +2457,7 @@ Some have speculated that thimerosal (a mercury-containing chemical) in vaccines
         <!--Result Screen View Controller-->
         <scene sceneID="gh2-NC-hhB">
             <objects>
-                <viewController id="cB4-Cn-cEf" customClass="ResultScreenViewController" customModule="AllAboutVaxxTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cB4-Cn-cEf" customClass="ResultScreenViewController" customModule="AllAboutVaxx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8qZ-Lt-5eA">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
