@@ -121,7 +121,7 @@
                     <navigationItem key="navigationItem" id="qkY-lO-KnP">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="mAA-ib-Zuk">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="XcW-U5-pGs">
-                                <rect key="frame" x="20" y="120" width="70" height="31"/>
+                                <rect key="frame" x="330.66666666666669" y="5" width="77.333333333333314" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Logout"/>
@@ -218,8 +218,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyV-ZG-lYW">
-                                <rect key="frame" x="53" y="514" width="322" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyV-ZG-lYW">
+                                <rect key="frame" x="53" y="617" width="322" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Don't have an account yet? Create an account"/>
                                 <connections>
