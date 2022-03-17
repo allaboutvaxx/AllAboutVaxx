@@ -33,6 +33,14 @@ class ResultScreenViewController: UIViewController {
     
     @IBOutlet weak var QuizResult: UILabel!
     
+    
+    @IBAction func restartTapped(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "startQuiz")
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 

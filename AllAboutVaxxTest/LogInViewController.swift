@@ -18,9 +18,10 @@ class LogInViewController: UIViewController {
     }
     
     @IBOutlet var warning: UILabel!
+    
     //override func viewDidAppear(_ animated: Bool) {
         //checkUserInfo()
-    //}
+        //}
    
     @IBOutlet var email: UITextField!
     

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NaH-l6-HDc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NaH-l6-HDc">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -120,7 +120,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="qkY-lO-KnP">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="mAA-ib-Zuk">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="XcW-U5-pGs">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="XcW-U5-pGs">
                                 <rect key="frame" x="330.66666666666669" y="5" width="77.333333333333314" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -139,10 +139,10 @@
             </objects>
             <point key="canvasLocation" x="3779.4392523364486" y="-802.80777537796985"/>
         </scene>
-        <!--View Controller-->
+        <!--Get Started View Controller-->
         <scene sceneID="f21-H6-IOF">
             <objects>
-                <viewController id="61z-Cu-Qns" customClass="ViewController" customModule="AllAboutVaxx" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="getStarted" useStoryboardIdentifierAsRestorationIdentifier="YES" id="61z-Cu-Qns" customClass="getStartedViewController" customModule="AllAboutVaxx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CNt-aj-lqw">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,7 +155,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Get Started"/>
                                 <connections>
-                                    <segue destination="HMA-M6-Rx2" kind="show" id="1Pw-GH-FjI"/>
+                                    <action selector="getStartedTapped:" destination="61z-Cu-Qns" eventType="touchUpInside" id="j9z-Kq-5s7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2488,6 +2488,9 @@ Some have speculated that thimerosal (a mercury-containing chemical) in vaccines
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Restart the Quiz"/>
+                                                <connections>
+                                                    <action selector="restartTapped:" destination="cB4-Cn-cEf" eventType="touchUpInside" id="1QD-df-n6h"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkp-b4-bdj">
                                                 <rect key="frame" x="44" y="384.33333333333326" width="340" height="400"/>
@@ -2856,10 +2859,10 @@ infectious?</string>
             </objects>
             <point key="canvasLocation" x="2629" y="-3104"/>
         </scene>
-        <!--View Controller-->
+        <!--Start Quiz View Controller-->
         <scene sceneID="WZF-ak-cbl">
             <objects>
-                <viewController id="orl-CA-Azr" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="startQuiz" useStoryboardIdentifierAsRestorationIdentifier="YES" id="orl-CA-Azr" customClass="startQuizViewController" customModule="AllAboutVaxx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vlT-mY-Z80">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2878,6 +2881,9 @@ infectious?</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Return to the Main Menu"/>
+                                <connections>
+                                    <action selector="backToMenuTapped:" destination="orl-CA-Azr" eventType="touchUpInside" id="UK9-Q5-gVm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="o7c-Ln-JXJ"/>
@@ -2910,7 +2916,7 @@ infectious?</string>
         <!--Navigation Controller-->
         <scene sceneID="v7L-cI-7rO">
             <objects>
-                <navigationController storyboardIdentifier="mainMenu" automaticallyAdjustsScrollViewInsets="NO" id="CEr-KE-ozv" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="mainMenu" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CEr-KE-ozv" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8EU-AH-FjB">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>
